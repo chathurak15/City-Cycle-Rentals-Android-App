@@ -17,26 +17,31 @@ An Android app for renting bicycles across Sri Lanka, offering seamless booking,
 
 ---
 
-## Demo Video 🎥
-[![Watch the video](https://img.youtube.com/vi/H7t4qeXhNPc/maxresdefault.jpg)](https://youtu.be/H7t4qeXhNPc)
-
-
-## 📸 Screenshots
-| Home Screen | Login | Reservation |
-|-------------|-------|-------------|
-| ![Home](home.jpg) | ![Login](login.jpg) | ![Reservation](reservation.jpg) |
-
-| Promotion | Profile | Rental History |
-|-----------|---------|----------------|
-| ![Promotion](promotion.jpg) | ![Profile](profile.jpg) | ![Rental History](rental%20History.jpg) |
-
----
-
 ## 🛠 Technologies Used
 - **Frontend**: `XML` for UI layouts.
 - **Backend**: `Java` for business logic.
 - **Database**: `SQLite` for local data storage (user profiles, rentals).
 - **Tools**: Android Studio, Git.
+
+---
+
+## Demo Video 🎥
+[![Watch the video](https://img.youtube.com/vi/H7t4qeXhNPc/maxresdefault.jpg)](https://youtu.be/H7t4qeXhNPc)
+
+---
+
+## 🎨 Wireframe  
+View the Figma wireframe and prototype for this app:  
+[![Figma](https://img.shields.io/badge/Figma-Wireframe-%23F24E1E)](https://www.figma.com/design/u6HsML5CRZuv2XobxZPa5N/Bike-Rental?node-id=0-1&t=v1pwpeMOWQ1MpwFa-1)  
+
+## 📸 Screenshots
+| Home Screen | Login | Reservation |
+|-------------|-------|-------------|
+| ![Home](UI/home.jpg) | ![Login](UI/login.jpg) | ![Reservation](UI/reservation.jpg) |
+
+| Promotion | Profile | Rental History |
+|-----------|---------|----------------|
+| ![Promotion](UI/promotion.jpg) | ![Profile](UI/profile.jpg) | ![Rental History](UI/rental%20History.jpg) |
 
 ---
 
