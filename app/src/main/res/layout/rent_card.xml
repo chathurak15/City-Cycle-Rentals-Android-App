@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:paddingBottom="0dp"
+    android:background="@drawable/rent_card_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginVertical="7dp"
+    android:layout_marginHorizontal="5dp">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/bikeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bike Name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/tvBikeLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PickUp : Maharagama"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvBikePrice"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:text="LKR 1000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/pickupTime"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="PickUp Time : 11.00"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"/>
+
+        <TextView
+            android:id="@+id/returnTime"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:text="Return Time : 11.00"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"/>
+        <TextView
+            android:id="@+id/returnStation"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text=" Boralasgamuwa"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:drawableStart="@drawable/locationprimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_marginEnd="2dp"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/red"
+                android:text="Cancel"
+                android:textSize="14dp"
+                android:padding="0dp" />
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/primary"
+                android:text="Completed"
+                android:textSize="14dp"
+                android:padding="0dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingStart="5dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/tracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waiting "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginEnd="4dp"
+            android:textAlignment="textEnd"
+            android:drawableEnd="@drawable/baseline_access_alarms_24"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/bikeImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/trek_fx2_disc"
+                android:padding="25dp"
+                android:background="@color/lightcyan"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

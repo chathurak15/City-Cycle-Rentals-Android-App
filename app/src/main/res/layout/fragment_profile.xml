@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profileFrag"
+    tools:context=".ProfileFragment"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="20dp">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+
+                app:cardCornerRadius="70dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/imgUpdateProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_icon"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Chathura!"
+                android:textColor="@color/primary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbg"
+                android:drawablePadding="10dp"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="@color/black"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittextbg"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:enabled="false"
+                android:textColorHint="@color/black"/>
+
+            <EditText
+                android:id="@+id/etDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittextbg"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:hint="Date of Birth"
+                android:inputType="none"
+                android:padding="10dp"
+                android:textColorHint="@color/black"/>
+
+            <EditText
+                android:id="@+id/etContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittextbg"
+                android:drawablePadding="10dp"
+                android:hint="Contact Number"
+                android:inputType="phone"
+                android:padding="10dp" android:textColorHint="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/etNIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittextbg"
+                android:drawablePadding="10dp"
+                android:hint="NIC Number"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:enabled="false"
+                android:textColorHint="@color/black"/>
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittextbg"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:paddingEnd="15dp"
+                    android:checked="true"
+                    android:buttonTint="@color/secondary"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="@color/black"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:backgroundTint="@color/primary"
+                android:text="Update"
+                android:textColor="@android:color/white"
+                android:padding="10dp"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp">
+
+                <Button
+                    android:id="@+id/btnPromotion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/secondary"
+                    android:text="Promotion"
+                    android:layout_marginEnd="5dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/red"
+                    android:text="Logout"
+                    android:layout_marginLeft="5dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RentBikeFragment"
+    android:background="@color/white"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reservation"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="15dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="8dp"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/reBikeImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/merida_2022"
+                android:background="@color/white"
+                android:padding="20dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvBikeName"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="Bike Name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tvBikeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Maharagama"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/locationprimary"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvBikePrice"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=" LKR 1000 per 1h"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <TextView
+                android:id="@+id/tvBikeType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=" Mountain Bike"
+                android:layout_marginTop="12dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/transport"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=" 4.5/5"
+                android:layout_marginTop="12dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/rating"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:id="@+id/tvBikeAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:text="Available"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="Reservation Information"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:paddingHorizontal="0dp">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text=" Pricing Plan :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/price"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/pricePlan"
+                android:background="@drawable/spinertbg"
+                android:padding="6dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:paddingHorizontal="0dp">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text=" Pickup Time :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/transport"/>
+
+           <EditText
+               android:id="@+id/etTime"
+               android:layout_width="156dp"
+               android:paddingHorizontal="8dp"
+               android:paddingVertical="4.5dp"
+               android:layout_height="wrap_content"
+               android:background="@drawable/edittextbg"
+               android:focusable="false"
+               android:hint="Select Your Time"
+               android:inputType="none"
+               android:textColorHint="@color/black"
+               android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:paddingHorizontal="0dp">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text=" Rental Duration :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/cycling"/>
+
+            <Spinner
+                android:id="@+id/spDuration"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/timePeriod"
+                android:background="@drawable/spinertbg"
+                android:padding="6dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:paddingHorizontal="0dp">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text=" Return Location :"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:drawableStart="@drawable/locationprimary"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:id="@+id/spReturnStation"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/spinertbg"
+                android:padding="6dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="Payment Information"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_marginTop="4dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Number"
+            android:background="@drawable/edittextbg"
+            android:padding="7dp"
+            android:textColorHint="@color/black"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:paddingHorizontal="0dp"
+            android:layout_marginHorizontal="8dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="EXP DATE"
+                android:background="@drawable/edittextbg"
+                android:padding="7dp"
+                android:layout_weight="2"
+                android:textColorHint="@color/black"/>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="CVV"
+                android:background="@drawable/edittextbg"
+                android:padding="7dp"
+                android:layout_weight="1"
+                android:textColorHint="@color/black"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="8dp">
+
+            <EditText
+                android:id="@+id/etPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Promo code"
+                android:textColorHint="@color/black"
+                android:padding="8dp"
+                android:background="@drawable/edittextbg"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPromo"
+                android:text="Apply"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:paddingVertical="10dp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/secondary"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp">
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amount : LKR 1000"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:background="@color/secondary"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBikeRent"
+            android:text="Rent Your Way to Happiness"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:paddingVertical="12dp"
+            android:textStyle="bold"
+            android:layout_marginVertical="5dp"
+            android:backgroundTint="@color/primary" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
