@@ -26,7 +26,7 @@ An Android app for renting bicycles across Sri Lanka, offering seamless booking,
 ---
 
 ## Demo Video 🎥
-[![Watch the video](https://img.youtube.com/vi/H7t4qeXhNPc/maxresdefault.jpg)](https://youtu.be/H7t4qeXhNPc)
+[![Watch the video]()
 
 ---
 
